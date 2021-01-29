@@ -96,23 +96,18 @@ steps
    
 Note
 ****
-If you want to host it to github use an empty ".nojekyll" file and add it to the docs dir.
+If you want to host it on github-pages use an empty ".nojekyll" file and add it to the docs dir.
 This will tell github that we are not using jekyll to host our pages.
 
 
-Contents:
-
+Contents
+========
 .. toctree::
    :maxdepth: 2
 
    modules
    main 
    dataload
-   
-All:
-   modules
-
-
 
 Indices and tables
 ==================
