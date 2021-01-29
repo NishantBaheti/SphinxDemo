@@ -53,7 +53,7 @@ steps
 
       ".." will tell sphinx to look for parent dir.
 
-   * update extention to be used.
+   * update extensions to be used.
    
          extensions = [
             'sphinx.ext.napoleon',
