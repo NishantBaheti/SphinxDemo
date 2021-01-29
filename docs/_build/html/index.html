@@ -1,0 +1,338 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Welcome to SphinxDemo’s documentation! &mdash; SphinxDemo 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="SphinxDemo" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> SphinxDemo
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">SphinxDemo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="main.html">main module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dataload.html">dataload module</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">SphinxDemo</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Welcome to SphinxDemo’s documentation!</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="welcome-to-sphinxdemo-s-documentation">
+<h1>Welcome to SphinxDemo’s documentation!<a class="headerlink" href="#welcome-to-sphinxdemo-s-documentation" title="Permalink to this headline">¶</a></h1>
+<p>This is one try to understand how things work in Sphinx and document
+structure.</p>
+<p>minimalisitic python documentation approach</p>
+<div class="section" id="steps">
+<h2>steps<a class="headerlink" href="#steps" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>Install Sphinx</p>
+<blockquote>
+<div><p>pip install Sphinx</p>
+</div></blockquote>
+</li>
+<li><p>Either make a project dir</p>
+<blockquote>
+<div><p>mkdir SphinxDemo</p>
+</div></blockquote>
+<p>or go to project dir</p>
+<blockquote>
+<div><p>cd SphinxDemo</p>
+</div></blockquote>
+</li>
+<li><p>Create a doc dir</p>
+<blockquote>
+<div><p>mkdir docs</p>
+</div></blockquote>
+<p>and enter the dir</p>
+<blockquote>
+<div><p>cd docs</p>
+</div></blockquote>
+</li>
+<li><p>Run command to quickstart sphinx</p>
+<blockquote>
+<div><p>sphinx-quickstart</p>
+</div></blockquote>
+<p>It will generate a basic structure of docs and
+will create index.rst,conf.py etc. files. These are very
+important as from this point we will be updating in these file to provide next
+configurations. for starters give all default values.</p>
+</li>
+<li><p>Go to conf.py and update</p>
+<ul>
+<li><p>for sphinx to understand the module path in which code is residing</p>
+<blockquote>
+<div><blockquote>
+<div><div class="line-block">
+<div class="line">import os</div>
+<div class="line">import sys</div>
+<div class="line">sys.path.insert(0, os.path.abspath(‘..’))</div>
+</div>
+</div></blockquote>
+<p>“..” will tell sphinx to look for parent dir.</p>
+</div></blockquote>
+</li>
+<li><p>update extention to be used.</p>
+<blockquote>
+<div><blockquote>
+<div><dl class="simple">
+<dt>extensions = [</dt><dd><p>‘sphinx.ext.napoleon’,
+‘sphinx_rtd_theme’,
+‘sphinx.ext.viewcode’,</p>
+</dd>
+</dl>
+<p>]</p>
+</div></blockquote>
+<p>we will be using napoleon to document python docstring and “rtd” read the docs
+theme to document it.</p>
+</div></blockquote>
+</li>
+<li><p>install rtd theme</p>
+<blockquote>
+<div><blockquote>
+<div><p>pip install sphinx_rtd_theme</p>
+</div></blockquote>
+<p>and update this in conf.py</p>
+<blockquote>
+<div><p>html_theme = ‘sphinx_rtd_theme’</p>
+</div></blockquote>
+</div></blockquote>
+</li>
+<li><p>and update this info in conf.py</p>
+<blockquote>
+<div><p>source_suffix = ‘.rst’</p>
+<p>master_doc = ‘index’</p>
+</div></blockquote>
+</li>
+</ul>
+</li>
+<li><p>Now go to project dir and write your python code and modules.
+use google docstring method to document classes and functions.</p></li>
+<li><p>Go to docs and Run this command to generate rst pages.</p>
+<blockquote>
+<div><p>sphinx-apidoc -o . ../</p>
+</div></blockquote>
+<p>for all the modules.</p>
+</li>
+<li><p>Update index.rst by looking at this page’s raw text to understand the
+requirement.</p></li>
+<li><p>go to docs and run this command to generate html pages.</p>
+<blockquote>
+<div><p>make html</p>
+</div></blockquote>
+</li>
+</ol>
+<p>Contents:</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">SphinxDemo</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dataload.html">dataload module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main.html">main module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="main.html">main module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dataload.html">dataload module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dataload.html#description">Description</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<dl class="simple">
+<dt>All:</dt><dd><p>modules</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="modules.html" class="btn btn-neutral float-right" title="SphinxDemo" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Nishant Baheti.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
